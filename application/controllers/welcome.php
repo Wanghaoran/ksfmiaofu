@@ -211,27 +211,23 @@ class Welcome extends CI_Controller {
         //消息内容
         $Content =  strtolower(strval($postObj -> Content));
 
-        $a ='';
 
         //关键字检测算法
-        foreach($this -> $keywordTpes as $key => $value){
+        foreach($this -> keywordTpes as $key => $value){
 
-            $a .= $key;
             $key_arr = explode(',', $key);
             if(in_array($Content, $key_arr)){
 
                 //检测回复标记类型并执行回复
                 if($value['type'] == 'text'){
                     $content = $value['content'];
-//                    $this -> responseText($toUsername, $fromUsername, $content);
+                    $this -> responseText($toUsername, $fromUsername, $content);
                 }
+
             }else{
                 continue;
             }
         }
-
-        $this -> responseText($toUsername, $fromUsername, $a);
-
     }
 
 
