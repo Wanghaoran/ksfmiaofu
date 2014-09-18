@@ -91,7 +91,7 @@ class Welcome extends CI_Controller {
     public function execText($postObj){
         $fromUsername = $postObj -> FromUserName;
         $toUsername = $postObj -> ToUserName;
-        $content = '感谢您的关注。9月15日开始，凡购买妙芙的小伙伴们在菜单栏中【Pincode兑奖】中输入包装盒内的兑奖码可以抽奖，更多有趣的妙芙吃法及有奖互动，敬请期待哦！[调皮]';
+        $content = '感谢您关注康师傅妙芙，您的消息已收到哦~[调皮]';
         $this -> responseText($toUsername, $fromUsername, $content);
     }
 
@@ -101,6 +101,12 @@ class Welcome extends CI_Controller {
         $toUsername = $postObj -> ToUserName;
         $content = '感谢您的关注。9月15日开始，凡购买妙芙的小伙伴们在菜单栏中【Pincode兑奖】中输入包装盒内的兑奖码可以抽奖，更多有趣的妙芙吃法及有奖互动，敬请期待哦！[调皮]';
         $this -> responseText($toUsername, $fromUsername, $content);
+    }
+
+    //取消关注
+    public function execUnsubscribe($postObj){
+        echo '';
+        exit;
     }
 
     //回复文本消息
