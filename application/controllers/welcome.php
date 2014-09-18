@@ -72,6 +72,13 @@ class Welcome extends CI_Controller {
 
         if($MsgType == 'event'){
             $action_name = $this -> msgTypes[$MsgType]['childEvent'][$Event]['ACTION_NAME'];
+
+            $fromUsername = $postObj -> FromUserName;
+            $toUsername = $postObj -> ToUserName;
+            $content = '1' . $action_name;
+            $this -> responseText($toUsername, $fromUsername, $content);
+
+
         }else{
             $action_name = $this -> msgTypes[$MsgType]['ACTION_NAME'];
         }
