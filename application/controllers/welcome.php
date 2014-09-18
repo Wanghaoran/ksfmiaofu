@@ -178,7 +178,9 @@ class Welcome extends CI_Controller {
         $fromUsername = $postObj -> FromUserName;
         $toUsername = $postObj -> ToUserName;
         $content = '感谢您关注康师傅妙芙，您的消息已收到哦~[调皮]';
-        $this -> responseText($toUsername, $fromUsername, $content);
+//        $this -> responseText($toUsername, $fromUsername, $content);
+        $this -> responseImage($toUsername, $fromUsername, '200355983');
+
     }
 
     //关注
@@ -221,6 +223,22 @@ class Welcome extends CI_Controller {
                     <FuncFlag>0</FuncFlag>
                     </xml>";
         $resultStr = sprintf($textTpl, $fromUserName, $toUserName, time(), 'text', $content);
+        echo $resultStr;
+        exit;
+    }
+
+    //回复图片消息
+    public function responseImage($toUserName, $fromUserName, $content){
+        $textTpl = "<xml>
+                    <ToUserName><![CDATA[%s]]></ToUserName>
+                    <FromUserName><![CDATA[%s]]></FromUserName>
+                    <CreateTime>%s</CreateTime>
+                    <MsgType><![CDATA[%s]]></MsgType>
+                    <Image>
+                    <MediaId><![CDATA[%s]]></MediaId>
+                    </Image>
+                    </xml>";
+        $resultStr = sprintf($textTpl, $fromUserName, $toUserName, time(), 'image', $content);
         echo $resultStr;
         exit;
     }
