@@ -5,8 +5,9 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-        
-	}
+        //接口验证
+        echo $_GET["echostr"];
+    }
 }
 
 /* End of file welcome.php */
