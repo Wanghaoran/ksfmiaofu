@@ -225,15 +225,19 @@ class Welcome extends CI_Controller {
 
             $key_arr = explode(',', $key);
 
-            if(in_array($Content, $key_arr)){
-                //检测回复标记类型并执行回复
-                if($value['type'] == 'text'){
-                    $content = $value['content'];
-                    $this -> responseText($toUsername, $fromUsername, $content);
+            foreach($key_arr as $value2){
+                if(strpos($Content, $key_arr)){
+                    //检测回复标记类型并执行回复
+                    if($value['type'] == 'text'){
+                        $content = $value['content'];
+                        $this -> responseText($toUsername, $fromUsername, $content);
+                    }
+                }else{
+                    continue;
                 }
-            }else{
-                continue;
             }
+
+
 
         }
     }
