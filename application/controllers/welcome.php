@@ -215,20 +215,17 @@ class Welcome extends CI_Controller {
         foreach($this -> $keywordTpes as $key => $value){
             $key_arr = explode(',', $key);
             if(in_array($Content, $key_arr)){
-                
+
                 //检测回复标记类型并执行回复
                 if($value['type'] == 'text'){
                     $content = $value['content'];
                     $this -> responseText($toUsername, $fromUsername, $content);
                 }
-
             }else{
-                return false;
+                continue;
             }
         }
     }
-
-
 
 
 }
