@@ -72,13 +72,6 @@ class Welcome extends CI_Controller {
 
         if($MsgType == 'event'){
             $action_name = $this -> msgTypes[$MsgType]['childEvent'][$Event]['ACTION_NAME'];
-
-            $fromUsername = $postObj -> FromUserName;
-            $toUsername = $postObj -> ToUserName;
-            $content = '1' . $action_name;
-            $this -> responseText($toUsername, $fromUsername, $content);
-
-
         }else{
             $action_name = $this -> msgTypes[$MsgType]['ACTION_NAME'];
         }
@@ -120,6 +113,21 @@ class Welcome extends CI_Controller {
     public function execUnsubscribe($postObj){
         echo '';
         exit;
+    }
+
+    //点击菜单
+    public function execClick($postObj){
+        $EventKey = strval($postObj -> EventKey);
+        $action_name = $this -> msgTypes['event']['childEvent']['CLICK']['EventKey'][$EventKey];
+        if(!$action_name){
+            $fromUsername = $postObj -> FromUserName;
+            $toUsername = $postObj -> ToUserName;
+            $content = '感谢您关注康师傅妙芙，您的消息已收到哦~[调皮]';
+            $this -> responseText($toUsername, $fromUsername, $content);
+            exit;
+        }else{
+            $this -> $action_name($postObj);
+        }
     }
 
     //回复文本消息
