@@ -211,6 +211,9 @@ class Welcome extends CI_Controller {
         //消息内容
         $Content =  strtolower(strval($postObj -> Content));
 
+        $this -> responseText($toUsername, $fromUsername, $Content);
+
+
         //关键字检测算法
         foreach($this -> $keywordTpes as $key => $value){
             $key_arr = explode(',', $key);
