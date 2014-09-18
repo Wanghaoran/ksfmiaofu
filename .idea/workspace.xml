@@ -44,9 +44,9 @@
       <file leaf-file-name="welcome.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/welcome.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="232" column="49" selection-start="7733" selection-end="7733" vertical-scroll-proportion="0.6443515" vertical-offset="3328" max-vertical-offset="4284">
+            <state line="62" column="13" selection-start="2008" selection-end="2008" vertical-scroll-proportion="0.37343097" vertical-offset="697" max-vertical-offset="4352">
               <folding>
-                <marker date="1411068041000" expanded="true" signature="5611:5961" placeholder="..." />
+                <marker date="1411068407000" expanded="true" signature="5838:6188" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -279,9 +279,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/welcome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="232" column="49" selection-start="7733" selection-end="7733" vertical-scroll-proportion="0.6443515" vertical-offset="3328" max-vertical-offset="4284">
+        <state line="62" column="13" selection-start="2008" selection-end="2008" vertical-scroll-proportion="0.37343097" vertical-offset="697" max-vertical-offset="4352">
           <folding>
-            <marker date="1411068041000" expanded="true" signature="5611:5961" placeholder="..." />
+            <marker date="1411068407000" expanded="true" signature="5838:6188" placeholder="..." />
           </folding>
         </state>
       </provider>
