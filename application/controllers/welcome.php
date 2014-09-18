@@ -102,7 +102,7 @@ class Welcome extends CI_Controller {
                 'title' => '小妙微信红包周周送不停！分享给小伙伴们惊喜一下吧！',
                 'description' => '即日起凡在“添加好友”中搜索“康师傅妙芙”，添加关注，并成功分享到朋友圈，与小妙成为好朋友，即有机会获得小妙送出的获得50元微信红包！还不呼朋唤友加关注？',
                 'picurl' => 'http://mmbiz.qpic.cn/mmbiz/awcj9xOKiaDJFDmZIoacqwa8YJvAVs4k7rIRUKzdKxxKVDt8RNocHIBkhCTiapYodeE32hibsiaatGpNOkKrnsHrfQ/0',
-                'url' => 'http://mp.weixin.qq.com/s?__biz=MzA5MTg2OTQyMw==&mid=200356038&idx=1&sn=c7d2c61322034d4f7765ed1fe82f5104#rd',
+                'url' => 'http://mp.weixin.qq.com/s?__biz=MzA5MTg2OTQyMw==&mid=200355835&idx=1&sn=c687ba28f9c84e2197e2807cbb206891#rd',
             ),
         );
 
