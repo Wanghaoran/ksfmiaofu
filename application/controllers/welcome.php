@@ -52,6 +52,14 @@ class Welcome extends CI_Controller {
             'type' => 'text',
             'content' => '这里是小妙~可以把我当作树洞，有什么话都可以私信跟我讲喔！[调皮]',
         ),
+        '买,购买' => array(
+            'type' => 'text',
+            'content' => '感谢您支持康师傅妙芙，您可以马上登陆康师傅妙芙1号店商城http://t.cn/RhiF8gq ，全天不打烊，妙芙随时享。[愉快]',
+        ),
+        '投诉,问题,质量,过期' => array(
+            'type' => 'text',
+            'content' => '感谢您购买康师傅产品，我们会收集您的反馈意见，如给您带来不便谢谢给予理解。同时您也可以在周一至周五9:00-17:00拨打400-651-0022热线服务电话咨询，或登入活动网站http://www.ksfmiaofu.cn，查看康师傅更多相关产品，谢谢。[微笑]',
+        ),
     );
 
 
@@ -216,17 +224,17 @@ class Welcome extends CI_Controller {
         foreach($this -> keywordTpes as $key => $value){
 
             $key_arr = explode(',', $key);
-            if(in_array($Content, $key_arr)){
 
+            if(in_array($Content, $key_arr)){
                 //检测回复标记类型并执行回复
                 if($value['type'] == 'text'){
                     $content = $value['content'];
                     $this -> responseText($toUsername, $fromUsername, $content);
                 }
-
             }else{
                 continue;
             }
+
         }
     }
 
