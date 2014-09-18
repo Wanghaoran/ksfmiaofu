@@ -43,6 +43,17 @@ class Welcome extends CI_Controller {
         ),
     );
 
+    public $keywordTpes = array(
+        '你好,好,hello,hi' => array(
+            'type' => 'text',
+            'content' => '你好，我是小妙，欢迎关注康师傅妙芙官方微信！[调皮]',
+        ),
+        '小妙,妙芙,无聊,聊天' => array(
+            'type' => 'text',
+            'content' => '这里是小妙~可以把我当作树洞，有什么话都可以私信跟我讲喔！[调皮]',
+        ),
+    );
+
 
 
     public function index()
@@ -112,6 +123,10 @@ class Welcome extends CI_Controller {
 
     //文字消息
     public function execText($postObj){
+
+        //关键字检测
+        $this -> keywordrespon($postObj);
+
         $fromUsername = $postObj -> FromUserName;
         $toUsername = $postObj -> ToUserName;
         $content = '感谢您关注康师傅妙芙，您的消息已收到哦~[调皮]';
@@ -186,6 +201,31 @@ class Welcome extends CI_Controller {
 
         echo $textTpl;
         exit;
+    }
+
+    //关键字回复
+    public function keywordrespon($postObj){
+
+        $fromUsername = $postObj -> FromUserName;
+        $toUsername = $postObj -> ToUserName;
+        //消息内容
+        $Content =  strtolower(strval($postObj -> Content));
+
+        //关键字检测算法
+        foreach($this -> $keywordTpes as $key => $value){
+            $key_arr = explode(',', $key);
+            if(in_array($Content, $key_arr)){
+                
+                //检测回复标记类型并执行回复
+                if($value['type'] == 'text'){
+                    $content = $value['content'];
+                    $this -> responseText($toUsername, $fromUsername, $content);
+                }
+
+            }else{
+                return false;
+            }
+        }
     }
 
 
