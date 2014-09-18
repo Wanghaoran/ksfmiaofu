@@ -32,7 +32,7 @@ class Welcome extends CI_Controller {
                 'CLICK' => array(
                     'ACTION_NAME' => 'execClick',
                     'EventKey' => array(
-                        'RESERVATION_HOTEL' => 'execClick_RESERVATION_HOTEL',
+                        'FUNNY_FAMILY' => 'execClick_FUNNY_FAMILY',//妙趣家族
                     ),
                 ),
                 'LOCATION' => array(
@@ -82,8 +82,14 @@ class Welcome extends CI_Controller {
         }else{
             $this -> $action_name($postObj);
         }
+    }
 
-
+    //自定义菜单－妙趣家族
+    public function execClick_FUNNY_FAMILY($postObj){
+        $fromUsername = $postObj -> FromUserName;
+        $toUsername = $postObj -> ToUserName;
+        $content = '康师傅妙趣家族即将上线，敬请关注哦~[调皮]';
+        $this -> responseText($toUsername, $fromUsername, $content);
     }
 
 
