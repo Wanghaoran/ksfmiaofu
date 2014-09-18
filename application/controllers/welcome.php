@@ -33,6 +33,7 @@ class Welcome extends CI_Controller {
                     'ACTION_NAME' => 'execClick',
                     'EventKey' => array(
                         'FUNNY_FAMILY' => 'execClick_FUNNY_FAMILY',//妙趣家族
+                        'WATCH_GIFT' => 'execClick_WATCH_GIFT',//关注有礼
                     ),
                 ),
                 'LOCATION' => array(
@@ -92,6 +93,22 @@ class Welcome extends CI_Controller {
         $this -> responseText($toUsername, $fromUsername, $content);
     }
 
+    //自定义菜单－妙享乐园－关注有礼
+    public function execClick_WATCH_GIFT($postObj){
+        $fromUsername = $postObj -> FromUserName;
+        $toUsername = $postObj -> ToUserName;
+        $Articles = array(
+            array(
+                'title' => '小妙微信红包周周送不停！分享给小伙伴们惊喜一下吧！',
+                'description' => '即日起凡在“添加好友”中搜索“康师傅妙芙”，添加关注，并成功分享到朋友圈，与小妙成为好朋友，即有机会获得小妙送出的获得50元微信红包！还不呼朋唤友加关注？',
+                'picurl' => 'http://mmbiz.qpic.cn/mmbiz/awcj9xOKiaDJFDmZIoacqwa8YJvAVs4k7rIRUKzdKxxKVDt8RNocHIBkhCTiapYodeE32hibsiaatGpNOkKrnsHrfQ/0',
+                'url' => 'http://mp.weixin.qq.com/s?__biz=MzA5MTg2OTQyMw==&mid=200356038&idx=1&sn=c7d2c61322034d4f7765ed1fe82f5104#rd',
+            ),
+        );
+
+        $this -> responseNews($toUsername, $fromUsername, $Articles);
+    }
+
 
     //文字消息
     public function execText($postObj){
@@ -144,6 +161,33 @@ class Welcome extends CI_Controller {
         echo $resultStr;
         exit;
     }
+
+    //回复图文消息
+    public function responseNews($toUserName, $fromUserName, $Articles){
+        $textTpl = "<xml>
+                    <ToUserName><![CDATA[" . $fromUserName . "]]></ToUserName>
+                    <FromUserName><![CDATA[" . $toUserName . "]]></FromUserName>
+                    <CreateTime>" . time() . "</CreateTime>
+                    <MsgType><![CDATA[news]]></MsgType>
+                    <ArticleCount>" . count($Articles) . "</ArticleCount>
+                    <Articles>";
+
+        foreach($Articles as $value){
+            $textTpl .= "<item>
+                         <Title><![CDATA[" . $value['title'] . "]]></Title>
+                         <Description><![CDATA[" . $value['description'] . "]]></Description>
+                         <PicUrl><![CDATA[" . $value['picurl'] . "]]></PicUrl>
+                         <Url><![CDATA[" . $value['url'] . "]]></Url>
+                         </item>";
+        }
+
+        $textTpl .= "</Articles>
+                     </xml>";
+
+        echo $textTpl;
+        exit;
+    }
+
 
 
 
