@@ -44,11 +44,9 @@
       <file leaf-file-name="welcome.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/welcome.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="243" column="5" selection-start="8107" selection-end="8107" vertical-scroll-proportion="0.6757322" vertical-offset="3485" max-vertical-offset="5270">
+            <state line="225" column="5" selection-start="7412" selection-end="7412" vertical-scroll-proportion="0.64016736" vertical-offset="3213" max-vertical-offset="4964">
               <folding>
-                <marker date="1411071142000" expanded="true" signature="6996:7346" placeholder="..." />
-                <marker date="1411071142000" expanded="true" signature="7600:7964" placeholder="..." />
-                <marker date="1411071142000" expanded="true" signature="7854:7937" placeholder="..." />
+                <marker date="1411071550000" expanded="true" signature="6920:7270" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -281,11 +279,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/welcome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="243" column="5" selection-start="8107" selection-end="8107" vertical-scroll-proportion="0.6757322" vertical-offset="3485" max-vertical-offset="5270">
+        <state line="225" column="5" selection-start="7412" selection-end="7412" vertical-scroll-proportion="0.64016736" vertical-offset="3213" max-vertical-offset="4964">
           <folding>
-            <marker date="1411071142000" expanded="true" signature="6996:7346" placeholder="..." />
-            <marker date="1411071142000" expanded="true" signature="7600:7964" placeholder="..." />
-            <marker date="1411071142000" expanded="true" signature="7854:7937" placeholder="..." />
+            <marker date="1411071550000" expanded="true" signature="6920:7270" placeholder="..." />
           </folding>
         </state>
       </provider>
