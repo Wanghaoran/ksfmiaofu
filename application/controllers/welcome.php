@@ -185,7 +185,7 @@ class Welcome extends CI_Controller {
     public function execSubscribe($postObj){
         $fromUsername = $postObj -> FromUserName;
         $toUsername = $postObj -> ToUserName;
-        $content = '感谢您的关注。9月15日开始，凡购买妙芙的小伙伴们在菜单栏中【Pincode兑奖】中输入包装盒内的兑奖码可以抽奖，更多有趣的妙芙吃法及有奖互动，敬请期待哦！[调皮]';
+        $content = '感谢您的关注。凡购买妙芙的小伙伴，请点击手机屏幕下端【Pincode兑奖】栏目，依提示登录QQ号后，在弹出的兑奖页面，输入妙芙包装盒内的兑奖码，参与抽奖。更多妙趣活动，敬请期待哦！[调皮]';
         $this -> responseText($toUsername, $fromUsername, $content);
     }
 
