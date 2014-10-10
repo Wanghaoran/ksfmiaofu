@@ -100,6 +100,10 @@ class Welcome extends CI_Controller {
             'type' => 'text',
             'content' => '人家是美女呢，好害羞~',
         ),
+        '包装盒内侧的兑奖码' => array(
+            'type' => 'text',
+            'content' => '您的输入有误。正确方法为：请打开纸质包装盒，在内侧找到11位数字和字母组合的兑奖码。点击“康师傅妙芙”订阅号首页屏幕下端【Pincode兑奖】栏目，依提示登录QQ号后，在弹出的兑奖页面，输入包装盒内的兑奖码，参与“开盒赢大奖”抽奖活动。祝您好运！',
+        ),
     );
 
 
@@ -185,7 +189,7 @@ class Welcome extends CI_Controller {
     public function execSubscribe($postObj){
         $fromUsername = $postObj -> FromUserName;
         $toUsername = $postObj -> ToUserName;
-        $content = '感谢您的关注。凡购买妙芙的小伙伴，请点击手机屏幕下端【Pincode兑奖】栏目，依提示登录QQ号后，在弹出的兑奖页面，输入妙芙包装盒内的兑奖码，参与抽奖。更多妙趣活动，敬请期待哦！[调皮]';
+        $content = '感谢您的关注。凡购买妙芙的小伙伴，请点击“康师傅妙芙”订阅号首页屏幕下端【Pincode兑奖】栏目，依提示登录QQ号后，在弹出的兑奖页面，输入包装盒内的兑奖码，参与“开盒赢大奖”抽奖活动。祝您好运！';
         $this -> responseText($toUsername, $fromUsername, $content);
     }
 
