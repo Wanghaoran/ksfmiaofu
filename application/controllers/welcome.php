@@ -68,10 +68,12 @@ class Welcome extends CI_Controller {
             'type' => 'text',
             'content' => '请多多关注康师傅妙芙，中奖名单会在每周公布哦~小妙偷偷告诉你，参与后期精彩游戏与互动还能增加红包几率哦~',
         ),
+        /*
         '兑奖码,抽奖' => array(
             'type' => 'text',
             'content' => '亲爱的，返回主菜单点击【Pincode兑奖】输入您的兑奖码，即可参与抽奖哦~中奖名单会在隔天10点公布，请多多关注活动网站~',
         ),
+        */
         '聊天,在吗,有人吗' => array(
             'type' => 'text',
             'content' => '啦啦啦，跟我聊天就不无聊啦',
