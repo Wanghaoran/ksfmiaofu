@@ -44,9 +44,9 @@
       <file leaf-file-name="welcome.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/welcome.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="28" selection-start="2395" selection-end="2395" vertical-scroll-proportion="0.4128225" vertical-offset="713" max-vertical-offset="5066">
+            <state line="185" column="32" selection-start="5989" selection-end="5989" vertical-scroll-proportion="0.71143615" vertical-offset="2695" max-vertical-offset="5185">
               <folding>
-                <marker date="1412948974000" expanded="true" signature="7182:7532" placeholder="..." />
+                <marker date="1412998680000" expanded="true" signature="7252:7602" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -68,8 +68,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="2560" />
-    <option name="height" value="1440" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -222,7 +222,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -230,7 +230,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25694996" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17167382" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -280,7 +280,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="182" column="0" selection-start="5834" selection-end="5834" vertical-scroll-proportion="0.0" vertical-offset="3094" max-vertical-offset="4964">
           <folding>
-            <marker date="1412948974000" expanded="true" signature="7182:7532" placeholder="..." />
+            <marker date="1412998680000" expanded="true" signature="7252:7602" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -303,7 +303,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="182" column="0" selection-start="5834" selection-end="5834" vertical-scroll-proportion="0.0" vertical-offset="3094" max-vertical-offset="4964">
           <folding>
-            <marker date="1412948974000" expanded="true" signature="7182:7532" placeholder="..." />
+            <marker date="1412998680000" expanded="true" signature="7252:7602" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -326,7 +326,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="225" column="5" selection-start="7412" selection-end="7412" vertical-scroll-proportion="0.0" vertical-offset="3213" max-vertical-offset="4964">
           <folding>
-            <marker date="1412948974000" expanded="true" signature="7182:7532" placeholder="..." />
+            <marker date="1412998680000" expanded="true" signature="7252:7602" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -347,9 +347,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/welcome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="28" selection-start="2395" selection-end="2395" vertical-scroll-proportion="0.4128225" vertical-offset="713" max-vertical-offset="5066">
+        <state line="185" column="32" selection-start="5989" selection-end="5989" vertical-scroll-proportion="0.71143615" vertical-offset="2695" max-vertical-offset="5185">
           <folding>
-            <marker date="1412948974000" expanded="true" signature="7182:7532" placeholder="..." />
+            <marker date="1412998680000" expanded="true" signature="7252:7602" placeholder="..." />
           </folding>
         </state>
       </provider>
